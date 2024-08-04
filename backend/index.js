@@ -52,7 +52,7 @@ app.post("/upload", upload.single('product'), (req, res) => {
     }
     res.json({
         success: true,
-        image_url: `https://e-commerce-backend-uk28.onrender.com/images/${req.file.filename}`
+        image_url: `http://localhost:5000//images/${req.file.filename}`
     });
 });
 
